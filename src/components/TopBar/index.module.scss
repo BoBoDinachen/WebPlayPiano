@@ -1,0 +1,16 @@
+.container{
+  position: absolute;
+  // width: 50%;
+  border-radius: 5px;
+  height: 66px;
+  background-color: rgba($color: #433e40, $alpha: .5);
+  & img:nth-child(1){
+    position: absolute;
+    margin: auto;
+    left: 50px;
+    top: 0;bottom: 0;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.container{
+  // position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #fef9eb;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  // 执行动画的盒子
+  .warpBox{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 1;
+    // border: 2px solid #7ed87f ;
+    background-color: #7ed87f;
+  }
+  .insideBox{
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    background-color: #fef9eb;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid #f1efdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // 键里面的文字和符号
+    & span:nth-of-type(1){
+      font-weight: bold;
+      font-size: 25px;
+      color: #65b8a3;
+    }
+    & span:nth-of-type(2){
+      font-weight: bold;
+      font-size: 15px;
+      color: #aaa992;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Cascadia Code','黑体',Consolas, 'Courier New', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 键位显示 */
+#popup-box{
+  position: absolute;
+  margin: auto;
+  top: 150px;
+  left:100px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* 美化滚动条 */
+/*整体部分*/ 
+::-webkit-scrollbar
+{
+	width: 5px;
+	height: 5px;
+}
+/*滑动轨道*/ 
+::-webkit-scrollbar-track
+{
+	border-radius: 0px;
+	background: none;
+}
+/*滑块*/
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: white;
+}
+/*滑块效果*/ 
+::-webkit-scrollbar-thumb:hover
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: rgba(85, 85, 85, 0.4);
+}

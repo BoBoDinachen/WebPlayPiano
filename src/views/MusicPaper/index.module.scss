@@ -1,0 +1,71 @@
+.container{
+  position: absolute;
+  margin: auto;
+  width: 70%;
+  top: 40px;left: 0;right: 0;
+  height: 350px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: #fef9eb;
+  // background-color:rgba($color: #fef9eb, $alpha: .8);
+  // border-radius: 5px;
+  opacity: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .content{
+    flex: 1;
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    & li{
+      padding: 5px;
+      margin-right: 10px;
+    }
+    & h3{
+      margin-bottom: 10px;
+    }
+    & img{
+      width: 400px;
+      height: 190px;
+    }
+  }
+  .log{
+    width: 100%;
+    height: 30px;
+    // background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333300;
+    &::before{
+      content: "";
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../../assets/乐谱2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  // 隐藏按钮
+  .bottomBtn{
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;right: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/隐藏.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

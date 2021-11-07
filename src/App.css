@@ -1,0 +1,8 @@
+.App {
+  width: 100VW;
+  height: 100VH;
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
