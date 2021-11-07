@@ -9,7 +9,7 @@ import { keyMapA, keyMapB, keyMapC } from '../../utils/key_word';
 import img_url1 from '../../assets/音符A.svg'
 import img_url2 from '../../assets/音符B.svg'
 import img_url3 from '../../assets/音符C.svg'
-
+import audio_url from '../../audio/audio.mp3'
 export default function HelloWorld() {
   let soundA = null;
   let soundB = null;
@@ -23,7 +23,7 @@ export default function HelloWorld() {
   function loadSoundSprite() {
     // 音级A
     soundA = new Howl({
-      src: ['/src/audio/audio.mp3'],
+      src: audio_url,
       html5: true,
       pool: 7,
       volume: 1,
@@ -34,7 +34,7 @@ export default function HelloWorld() {
     })
     // 音级B
     soundB = new Howl({
-      src: ['/src/audio/audio.mp3'],
+      src: audio_url,
       html5: true,
       pool: 7,
       volume: .5,
@@ -45,7 +45,7 @@ export default function HelloWorld() {
     })
     // 音级C
     soundC = new Howl({
-      src: ['/src/audio/audio.mp3'],
+      src: audio_url,
       html5: true,
       pool: 7,
       volume: .2,

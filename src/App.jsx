@@ -7,11 +7,13 @@ import AffixBox from './components/AffixBox/AffixBox';
 import TopBar from './components/TopBar/TopBar'
 import RuleBooks from './views/RuleBooks/RuleBooks'
 import MusicPaper from './views/MusicPaper/MusicPaper'
+import bj_sound_url from './audio/bj_music.mp3'
+
 function App() {
   let sound = null; //背景音乐
   useEffect(() => {
     sound = new Howl({
-      src: ["/src/audio/bj_music.mp3"],
+      src: bj_sound_url,
       volume: 1,
       loop: true,
       autoplay: false
