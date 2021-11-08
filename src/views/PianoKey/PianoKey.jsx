@@ -62,38 +62,38 @@ export default function HelloWorld() {
       switch (e.code) {
         case "KeyQ":
           showPopupBox("Q");
-          palySpriteToName("C1");
-          executeSpriteAnima("C1");
+          palySpriteToName("A1");
+          executeSpriteAnima("A1");
           break;
         case "KeyW":
           showPopupBox("W");
-          palySpriteToName("C2");
-          executeSpriteAnima("C2");
+          palySpriteToName("A2");
+          executeSpriteAnima("A2");
           break;
         case "KeyE":
           showPopupBox("E");
-          palySpriteToName("C3");
-          executeSpriteAnima("C3");
+          palySpriteToName("A3");
+          executeSpriteAnima("A3");
           break;
         case "KeyR":
           showPopupBox("R");
-          palySpriteToName("C4");
-          executeSpriteAnima("C4");
+          palySpriteToName("A4");
+          executeSpriteAnima("A4");
           break;
         case "KeyT":
           showPopupBox("T");
-          palySpriteToName("C5");
-          executeSpriteAnima("C5");
+          palySpriteToName("A5");
+          executeSpriteAnima("A5");
           break;
         case "KeyY":
           showPopupBox("Y");
-          palySpriteToName("C6");
-          executeSpriteAnima("C6");
+          palySpriteToName("A6");
+          executeSpriteAnima("A6");
           break;
         case "KeyU":
           showPopupBox("U");
-          palySpriteToName("C7");
-          executeSpriteAnima("C7");
+          palySpriteToName("A7");
+          executeSpriteAnima("A7");
           break;
         case "KeyA":
           showPopupBox("A");
@@ -132,33 +132,33 @@ export default function HelloWorld() {
           break;
         case "KeyZ":
           showPopupBox("Z");
-          palySpriteToName("A1");
-          executeSpriteAnima("A1");
+          palySpriteToName("C1");
+          executeSpriteAnima("C1");
           break;
         case "KeyX":
           showPopupBox("X");
-          palySpriteToName("A2");
-          executeSpriteAnima("A2");
+          palySpriteToName("C2");
+          executeSpriteAnima("C2");
           break;
         case "KeyC":
           showPopupBox("C");
-          palySpriteToName("A3");
-          executeSpriteAnima("A3");
+          palySpriteToName("C3");
+          executeSpriteAnima("C3");
           break;
         case "KeyV":
           showPopupBox("V");
-          palySpriteToName("A4");
-          executeSpriteAnima("A4");
+          palySpriteToName("C4");
+          executeSpriteAnima("C4");
           break;
         case "KeyB":
           showPopupBox("B");
-          palySpriteToName("A5");
-          executeSpriteAnima("A5");
+          palySpriteToName("C5");
+          executeSpriteAnima("C5");
           break;
         case "KeyN":
           showPopupBox("N");
-          palySpriteToName("A6");
-          executeSpriteAnima("A6");
+          palySpriteToName("C6");
+          executeSpriteAnima("C6");
           break;
         case "KeyM":
           showPopupBox("M");
@@ -220,9 +220,9 @@ export default function HelloWorld() {
       </div>
       <div className={styles.right}>
         {/* A序列键 */}
-        <div className={styles.keyBoxsC}>
+        <div className={styles.keyBoxsA}>
           {
-            keyMapC.map((key, index) => {
+            keyMapA.map((key, index) => {
               return (
                 <KeyItem key={key.index} playAnima={executeSpriteAnima} playSound={palySpriteToName} keyName={key.index} symbol={key.symbol} word={key.word}></KeyItem>
               )
@@ -240,9 +240,9 @@ export default function HelloWorld() {
           }
         </div>
         {/* C序列键 */}
-        <div className={styles.keyBoxsA}>
+        <div className={styles.keyBoxsC}>
           {
-            keyMapA.map((key, index) => {
+            keyMapC.map((key, index) => {
               return (
                 <KeyItem key={key.index} playAnima={executeSpriteAnima} playSound={palySpriteToName} keyName={key.index} symbol={key.symbol} word={key.word}></KeyItem>
               )
